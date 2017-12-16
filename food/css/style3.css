@@ -1,0 +1,45 @@
+
+
+.col-md-3{
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 50px;
+  margin-right:20px;
+  margin-left:10px;
+  float:left;
+
+  border:1px solid black;
+
+}
+.image{
+  z-index:1000;
+}
+
+.content{
+
+  font-family:fantasy;
+  position: absolute;
+  opacity: 1;
+  color:black;
+  z-index:1001;
+
+}
+img{
+  width:80%;
+  height:80%;
+  position:absolute;
+  opacity: 1;
+  transition:left .3 linear;
+}
+
+.col-md-3:hover img{
+  opacity:0.5;
+}
+.col-md-3:hover .content{
+  opacity:1;
+}
+.details{
+  opacity: 0;
+}
+.col-md-3:hover .details{
+  opacity: 1;
+}
