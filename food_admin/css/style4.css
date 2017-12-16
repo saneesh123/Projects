@@ -1,0 +1,42 @@
+body{
+  margin:0px;
+  padding:0px;
+
+}
+
+#sidebar{
+  background:#151718;
+  width:200px;
+  height:650px;
+  displa:block;
+  top:0px;
+  left:-200px;
+  position:absolute;
+  transition: left 0.3s linear;
+}
+#side-btn{
+  display:inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  width:20px;
+  height:15px;
+  margin: 20px;
+  position:absolute;
+  top:0px;
+  right:-60px;
+  z-index:1000;
+}
+#side-btn span{
+  height:1px;
+  background: #111;
+  margin-bottom:5px;
+  display:block;
+}
+#sidebar.visible{
+  left:0px;
+}
+.container{
+  right:-60px;
+  position: absolute;
+  transition: left 0.5s ease;
+}
